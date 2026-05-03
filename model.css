@@ -1,7 +1,7 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,4 +11,54 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.model-open {
+    background-color: rgba(0, 0, 0, 0.221);
+    color: white;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 5px solid white;
+    position: relative;
+    top: 50%;
+    left: 20px;
+}
+
+.model-container {
+    background-color: rgba(0, 0, 0, 0.918);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+
+.container {
+    background-color: white;
+    border: 5px solid white;
+    font-size: 1.3rem;
+    width: 190px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 7px;
+    transform: translate(350%, 600%);
+}
+
+.close {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.close:active {
+    color: red;
 }
